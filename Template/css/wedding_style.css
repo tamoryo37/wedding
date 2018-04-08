@@ -137,6 +137,7 @@ html {
 .wed_image_bck {
 	-webkit-background-size: cover;
 	background-size: cover;
+    background-position: center center;
 }
 .wed_top_menu_mobile_link {
 	display: none;
