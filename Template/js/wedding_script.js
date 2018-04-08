@@ -63,45 +63,45 @@
     $('.date_picker').datepicker();
 
     /*RSVP Form*/
-    $(".wed_form").validate({
-	  submitHandler: function(form) {
-	  	var type = $(form).attr('id');
-	    send_form(type);
-		return false;
-	  }
-	 });
-	
-	function send_form(type){
-	  var arr = [];
-	  $("#"+type+" .form-control").each(function(){
-
-	          var element = $(this).attr('name');
-	          var value = $(this).val();
-	          $(this).css({border:"1px solid #c4c4c4"});
-	          if($(this).prop('required') && value =="") {
-	                  $(this).css({border:"2px solid red"});
-	                  $(this).focus();
-	                  return false;
-	          }
-	          if (!value == '') {
-	                  arr.push('&'+element+'='+value);
-	          }
-	  })
-
-
-	  var dataString = (arr.join (' '));
-	  $.ajax({
-	          method: "POST",
-	          url: "https://formspree.io/verothemes@gmail.com",
-	          data: dataString,
-	          dataType: "json",
-	          success: function() {
-	                  $("#"+type).html("<div id='form_send_message'>Thank you for your request, we will contact you as soon as possible.</div>", 1500);
-	          }
-	  });
-
-
-	}
+    // $(".wed_form").validate({
+	//   submitHandler: function(form) {
+	//   	var type = $(form).attr('id');
+	//     send_form(type);
+	// 	return false;
+	//   }
+	//  });
+	//
+	// function send_form(type){
+	//   var arr = [];
+	//   $("#"+type+" .form-control").each(function(){
+    //
+	//           var element = $(this).attr('name');
+	//           var value = $(this).val();
+	//           $(this).css({border:"1px solid #c4c4c4"});
+	//           if($(this).prop('required') && value =="") {
+	//                   $(this).css({border:"2px solid red"});
+	//                   $(this).focus();
+	//                   return false;
+	//           }
+	//           if (!value == '') {
+	//                   arr.push('&'+element+'='+value);
+	//           }
+	//   })
+    //
+    //
+	//   var dataString = (arr.join (' '));
+	//   $.ajax({
+	//           method: "POST",
+	//           url: "https://formspree.io/verothemes@gmail.com",
+	//           data: dataString,
+	//           dataType: "json",
+	//           success: function() {
+	//                   $("#"+type).html("<div id='form_send_message'>Thank you for your request, we will contact you as soon as possible.</div>", 1500);
+	//           }
+	//   });
+    //
+    //
+	// }
 
     /*Gallery Lightbox*/
 	$('.lightbox').magnificPopup({ 

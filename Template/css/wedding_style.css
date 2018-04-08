@@ -4309,6 +4309,7 @@ h2.wed_without_after {
 .wed_service_block {
 	height: 300px;
 	display: block;
+	background-position: center center;
 }
 	.wed_service_block i {
 		font-size: 40px;
