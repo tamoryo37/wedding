@@ -5807,6 +5807,7 @@ input[type=radio], input[type=checkbox] {
 	background-color: #f6f7f8;
 	vertical-align: middle;
 	cursor: pointer;
+    font-weight: 100;
 }
 .radio:hover, .checkbox:hover {
 	background-color: #e2edd7;
@@ -5872,6 +5873,9 @@ input[type=checkbox]:checked + .checkbox:before {
 
 .checkbox.left{
 	float: left;
+}
+.font-bold{
+    font-weight: bold;
 }
 
 @media screen and (max-width: 480px) {

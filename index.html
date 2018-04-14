@@ -156,7 +156,7 @@
                             <h6 class="wed_name_right">Ayuka<br><span>Tamoto</span></h6>
                         </div>
                     </div>
-                    <!-- Couple Text -->
+                    <!-- Information Text -->
                     <div class="married_txt skrollable skrollable-after" data-bottom="opacity:0" data-center="opacity:1"
                          style="opacity: 1;">
                         <h3>You're Invited</h3>
@@ -567,9 +567,9 @@
         <div class="wed_water_border">
             <!-- section -->
             <section id="rsvp" class="wed_section_inner wed_image_bck wed_fixed" data-stellar-background-ratio="0.2"
-                     data-image="images/03_white.png">
+                     data-image="images/original/form.jpg">
                 <!-- over -->
-                <div class="wed_over" data-color="rgb(62, 54, 187)" data-opacity="0.9" data-blend="screen"></div>
+                <div class="wed_over" data-color="#2e6da4" data-opacity="0.9" data-blend="screen"></div>
 
                 <div class="container text-center wed_great_titles">
                     <div class="row">
@@ -585,10 +585,10 @@
                                   target="_blank">
                                 <div class="row">
                                     <input type="radio" name="attendance" value="出席" checked id="radio01"/>
-                                    <label for="radio01" class="radio">ご出席</label>
+                                    <label for="radio01" class="radio font-bold">ご出席</label>
 
                                     <input type="radio" name="attendance" value="欠席" id="radio02"/>
-                                    <label for="radio02" class="radio">ご欠席</label>
+                                    <label for="radio02" class="radio font-bold">ご欠席</label>
 
                                     <div class="col-md-12">
                                         <div class="form_color wed_image_bck" data-border="#b58cf0">
@@ -617,6 +617,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
+                                        <div class="form_color wed_image_bck" data-border="#b58cf0">
+                                            <textarea class="form-control" placeholder="メッセージ"
+                                            name="message"></textarea>
+                                        </div>
+                                        <input type="checkbox" name="afterParty" value="参加" id="afterParty"/>
+                                        <label for="afterParty" class="checkbox left">2次会に参加する</label>
+
                                         <input type="checkbox" name="allergies" value="allergies" id="allergies"/>
                                         <label for="allergies" class="checkbox left">食材アレルギー</label>
 
@@ -624,28 +631,22 @@
                                         <label for="children" class="checkbox left">お子様連れ</label>
 
                                         <div id="allergies-text" class="form_color wed_image_bck hidden"
-                                             data-border="#b58cf0">
+                                        data-border="#b58cf0">
                                             <textarea class="form-control" placeholder="食材のアレルギーをお持ちの場合はご入力ください。"
-                                                      name="message"></textarea>
+                                            name="message"></textarea>
                                         </div>
                                         <div id="children-text" class="form_color wed_image_bck hidden"
-                                             data-border="#b58cf0">
+                                        data-border="#b58cf0">
                                             <textarea class="form-control" placeholder="お子様連れでいらっしゃる方は、お子様のお名前とご年齢、お席はお子様用・大人用かご入力ください。"
-                                                      name="message"></textarea>
+                                            name="message"></textarea>
                                         </div>
-
-                                        <div class="form_color wed_image_bck" data-border="#b58cf0">
-                                            <textarea class="form-control" placeholder="メッセージ"
-                                                      name="message"></textarea>
-                                        </div>
-
-                                        <input type="checkbox" name="afterParty" value="参加" checked id="afterParty"/>
-                                        <label for="afterParty" class="checkbox left">2次会に参加する</label>
 
                                         <!--<button class="button secondary" type="submit">Submit</button>-->
                                     </div>
-                                    <input type="submit" class="btn btn_new wed_btn_margbot" value="送信">
 
+                                </div>
+                                <div class="row">
+                                    <input type="submit" class="btn btn_new wed_btn_margbot " value="送信">
                                 </div>
                             </form>
                         </div>
