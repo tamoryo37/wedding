@@ -4322,6 +4322,7 @@ h2.wed_without_after {
 		text-transform: uppercase;
 	}
 	.wed_service_block .wed_simple_block {
+		width: 100%;
 		padding: 0;
 		-webkit-transition: all 0.3s;
 		-o-transition: all 0.3s;
@@ -5879,7 +5880,10 @@ input[type=checkbox]:checked + .checkbox:before {
 }
 
 @media screen and (max-width: 480px) {
-    p.font-mini {
+    p.font-medium {
         font-size: 13px;
+    }
+    p.font-mini {
+        font-size: 12px;
     }
 }
