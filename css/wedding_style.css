@@ -5873,3 +5873,9 @@ input[type=checkbox]:checked + .checkbox:before {
 .checkbox.left{
 	float: left;
 }
+
+@media screen and (max-width: 480px) {
+    p.font-mini {
+        font-size: 13px;
+    }
+}
