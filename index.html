@@ -63,15 +63,11 @@
                     <i class="ti ti-menu"></i>
                 </div>
                 <!-- Top Menu -->
-                <!--TODO menuを選択した時にメニューバーを閉じる-->
-
                 <div class="wed_top_menu_cont">
                     <ul class="wed_top_menu">
                         <li><a href="#">Home</a></li>
                         <li><a href="#story">Story</a></li>
                         <li><a href="#where">Where&When</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#journal">Wedding Journal</a></li>
                         <li><a href="#rsvp">RSVP</a></li>
                     </ul>
                 </div>
@@ -480,7 +476,7 @@
             <section id="where" class="wed_section_inner">
                 <div class="container-full">
                     <div class="row">
-<!--TODO　時間いれる-->
+                        <!--TODO　時間いれる-->
                         <div class="col-md-4 wed_wht_txt wed_image_bck wed_service_block"
                              data-image="https://zexy.net/pa/7770023774/01/1728386_458.jpg">
                             <!-- Over -->
@@ -492,8 +488,8 @@
                                 <h4>挙式</h4>
                                 <h4>- CEREMONY -</h4>
                                 <br>
-                                <p>品川プリンスホテル<br>メインタワー　3階<br>TENKEI</p>
-                                <p>13:30〜14:00</p>
+                                <p>品川プリンスホテル<br>メインタワー　3階<br>TENKEI
+                                    <br>13:30〜14:00</br>
                             </div>
                         </div>
 
@@ -508,8 +504,8 @@
                                 <h4>披露宴</h4>
                                 <h4>- RECEPTION -</h4>
                                 <br>
-                                <p>品川プリンスホテル<br>メインタワー　34階<br>ルビー34</p>
-                                <p>14:45〜17:15<br>（14:15〜受付開始）</p>
+                                <p>品川プリンスホテル<br>メインタワー　34階<br>ルビー34
+                                    <br>14:45〜17:15<br>（14:15受付開始）</p>
                             </div>
                         </div>
 
@@ -524,8 +520,10 @@
                                 <h4>2次会</h4>
                                 <h4>- AFTER PARTY -</h4>
                                 <br>
-                                <p>品川プリンスホテル<br>メインタワー　19階<br>エレガント19</p>
-                                <p>18:30〜20:30<br>（18:00〜受付開始）</p>
+                                <p>品川プリンスホテル<br>メインタワー　19階<br>エレガント19
+                                    <br>18:30〜20:30<br>（18:00受付開始）<br>
+                                    <span style="font-size: 12px">男性：7,500円　女性：6,500円</span>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -552,7 +550,7 @@
 
                 <!-- over -->
                 <div class="wed_over" data-color="rgb(139, 131, 232)" data-opacity="0.9"></div>
-<!--TODO mapクリックして遷移できない-->
+                <!--TODO mapクリックして遷移できない-->
                 <!-- map -->
                 <div id="map" class="wed_map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.0034611777783!2d139.7343153150174!3d35.62764118020687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188a59f149d393%3A0x4adc162996964096!2z5ZOB5bed44OX44Oq44Oz44K544Ob44OG44Or44Oh44Kk44Oz44K_44Ov44O8!5e0!3m2!1sja!2sjp!4v1523089385725"
@@ -580,53 +578,76 @@
                             <p class="wed_form_txt">
                                 お手数ではございますが、<br>
                                 以下フォームより必要事項をご入力の上、送信をお願いいたします。<br>
-                                ギリギリになって申し訳ありません。<br>
-                                <span style="font-weight:bold;">5月2日</span>までに送信いただけますと幸いです。</p>
+                                <span style="font-weight:bold;">5月3日</span>までに送信いただけますと幸いです。</p>
 
-                            <form id="wed_form" class="wed_form" action="https://api.formbucket.com/f/buk_xplcmyRuEqUfs6a3AAWoIjeS" method="post" target="_blank">
+                            <form id="wed_form" class="wed_form"
+                                  action="https://api.formbucket.com/f/buk_xplcmyRuEqUfs6a3AAWoIjeS" method="post"
+                                  target="_blank">
                                 <div class="row">
+                                    <input type="radio" name="attendance" value="出席" checked id="radio01"/>
+                                    <label for="radio01" class="radio">ご出席</label>
+
+                                    <input type="radio" name="attendance" value="欠席" id="radio02"/>
+                                    <label for="radio02" class="radio">ご欠席</label>
+
                                     <div class="col-md-12">
                                         <div class="form_color wed_image_bck" data-border="#b58cf0">
-                                            <input type="text" class="form-control" placeholder="Name" name="name"
+                                            <input type="text" class="form-control" placeholder="お名前" name="name"
                                                    required>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form_color wed_image_bck" data-border="#b58cf0">
-                                            <input type="text" class="form-control" placeholder="E-mail" name="email"
+                                            <input type="text" class="form-control" placeholder="ふりがな" name="kana"
                                                    required>
                                         </div>
                                     </div>
-                                    <!--<div class="col-md-12">-->
-                                        <!--<div class="form_color wed_image_bck" data-border="#b58cf0">-->
-                                            <!--<select class="form-control" name="guests" required>-->
-                                                <!--<option value="">#Guests</option>-->
-                                                <!--<option>1</option>-->
-                                                <!--<option>2</option>-->
-                                                <!--<option>3</option>-->
-                                            <!--</select>-->
-                                        <!--</div>-->
-                                    <!--</div>-->
+                                    <div class="col-md-12">
+                                        <div class="form_color wed_image_bck" data-border="#b58cf0">
+                                            <input type="text" class="form-control" placeholder="郵便番号" name="zipcode"
+                                                   required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form_color wed_image_bck" data-border="#b58cf0">
+                                            <input type="text" class="form-control" placeholder="住所" name="address"
+                                                   required>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <div class="form_color wed_image_bck" data-border="#b58cf0">
-                                            <textarea class="form-control" placeholder="Message"
+                                        <input type="checkbox" name="allergies" value="allergies" id="allergies"/>
+                                        <label for="allergies" class="checkbox left">食材アレルギー</label>
+
+                                        <input type="checkbox" name="children" value="children" id="children"/>
+                                        <label for="children" class="checkbox left">お子様連れ</label>
+
+                                        <div id="allergies-text" class="form_color wed_image_bck hidden"
+                                             data-border="#b58cf0">
+                                            <textarea class="form-control" placeholder="食材のアレルギーをお持ちの場合はご入力ください。"
                                                       name="message"></textarea>
                                         </div>
+                                        <div id="children-text" class="form_color wed_image_bck hidden"
+                                             data-border="#b58cf0">
+                                            <textarea class="form-control" placeholder="お子様連れでいらっしゃる方は、お子様のお名前とご年齢、お席はお子様用・大人用かご入力ください。"
+                                                      name="message"></textarea>
+                                        </div>
+
+                                        <div class="form_color wed_image_bck" data-border="#b58cf0">
+                                            <textarea class="form-control" placeholder="メッセージ"
+                                                      name="message"></textarea>
+                                        </div>
+
+                                        <input type="checkbox" name="afterParty" value="参加" checked id="afterParty"/>
+                                        <label for="afterParty" class="checkbox left">2次会に参加する</label>
+
                                         <!--<button class="button secondary" type="submit">Submit</button>-->
-                                        <input type="submit" class="btn btn_new wed_btn_margbot" value="Send">
                                     </div>
+                                    <input type="submit" class="btn btn_new wed_btn_margbot" value="送信">
 
                                 </div>
                             </form>
-                            <form id="my-awesome-form" action="https://api.formbucket.com/f/buk_xplcmyRuEqUfs6a3AAWoIjeS" method="post" target="_blank">
-                                <input type="text" name="email" placeholder="Email" />
-                                <input type="text" name="message" placeholder="Message" />
-                                <button class="button secondary" type="submit">Submit</button>
-                            </form>
-
-
                         </div>
                         <!-- col end -->
                     </div>

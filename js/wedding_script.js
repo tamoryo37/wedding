@@ -595,4 +595,22 @@
 })(jQuery);
 
 
+//クリックでハンバーガーメニュー閉じる
+$('ul.wed_top_menu').click(function(){
+    $('.wed_top_menu_cont').css('display','none');
+});
 
+$('#allergies').click(function () {
+	if($(this).is(':checked')){
+		$('#allergies-text').removeClass('hidden');
+    }else {
+        $('#allergies-text').addClass('hidden');
+	}
+});
+$('#children').click(function () {
+    if($(this).is(':checked')){
+        $('#children-text').removeClass('hidden');
+    }else {
+        $('#children-text').addClass('hidden');
+    }
+});

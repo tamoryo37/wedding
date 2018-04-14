@@ -481,15 +481,15 @@ p.wed_wht_txt {
 	margin-left: auto;
 }
 .form-control {
-	border-radius:0;
+	border-radius:5px;
 	height: 50px;
 	padding: 10px 20px;
 	box-shadow:none;
 	border: 3px solid transparent;
 }
 .form_color {
-	margin-bottom: 30px;
-	border: 3px solid;
+	margin: 15px 0;
+	/*border: 3px solid;*/
 }
 .form-control.error {   
 	border: 1px solid red;
@@ -662,10 +662,11 @@ textarea.form-control {
 	background: rgba(110, 88, 48,1);
 }
 .btn_new {
+	width: 25%;
   padding: 15px;
   border: 0;
   position: relative;
-	border-radius:0;
+	border-radius:5px!important;
   background: rgba(179,129,247,1);
   color: #fff;
 	-webkit-transition: all 0.3s;
@@ -738,7 +739,7 @@ textarea.form-control {
 	 transition: all .5s;
 	}
 	.wed_btn_margbot {
-		margin-bottom: 30px;
+		margin: 15px 0;
 	}
 	/*Floral Btn*/
 .wed_floral .wed_wht_txt .btn {
@@ -5783,4 +5784,92 @@ img.wed_fullwidth {
 .wed_agency_full .wed_partners_agency .wed_anim_box {
   margin-bottom: -3px;
   margin-right: -3px;
+}
+
+
+/*input radio check ================================= */
+
+
+
+input[type=radio], input[type=checkbox] {
+	display: none;
+}
+
+.radio, .checkbox {
+	box-sizing: border-box;
+	-webkit-transition: background-color 0.2s linear;
+	transition: background-color 0.2s linear;
+	position: relative;
+	display: inline-block;
+	margin: 0 20px 8px 0;
+	padding: 12px 12px 12px 42px;
+	border-radius: 8px;
+	background-color: #f6f7f8;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.radio:hover, .checkbox:hover {
+	background-color: #e2edd7;
+}
+.radio:hover:after, .checkbox:hover:after {
+	border-color: #53b300;
+}
+.radio:after, .checkbox:after {
+	-webkit-transition: border-color 0.2s linear;
+	transition: border-color 0.2s linear;
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	display: block;
+	margin-top: -10px;
+	width: 16px;
+	height: 16px;
+	border: 2px solid #bbb;
+	border-radius: 5px;
+	content: '';
+}
+
+.radio:before {
+	-webkit-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+	position: absolute;
+	top: 50%;
+	left: 18px;
+	display: block;
+	margin-top: -7px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #53b300;
+	content: '';
+	opacity: 0;
+}
+input[type=radio]:checked + .radio:before {
+	opacity: 1;
+}
+
+.checkbox:before {
+	-webkit-transition: opacity 0.2s linear;
+	transition: opacity 0.2s linear;
+	position: absolute;
+	top: 50%;
+	left: 21px;
+	display: block;
+	margin-top: -7px;
+	width: 5px;
+	height: 9px;
+	border-right: 3px solid #53b300;
+	border-bottom: 3px solid #53b300;
+	content: '';
+	opacity: 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+input[type=checkbox]:checked + .checkbox:before {
+	opacity: 1;
+}
+
+.checkbox.left{
+	float: left;
 }
