@@ -4479,6 +4479,7 @@ footer a {
 	.wed_map {
 		width:100%;
 		height: 350px;
+
 	}
 
 
@@ -5591,6 +5592,7 @@ img.wed_fullwidth {
 	.married_txt {
 		padding-top: 30px;
 		padding-bottom: 60px;
+		opacity: 1;
 	}
 	.wed_name_right {
 		left: 84%;
@@ -5836,6 +5838,9 @@ input[type=checkbox]:checked + .checkbox:before {
 .font-bold{
     font-weight: bold;
 }
+span.font-12{
+	font-size:12px;
+}
 
 @media screen and (max-width: 480px) {
 	.wed_slider{
@@ -5855,6 +5860,16 @@ input[type=checkbox]:checked + .checkbox:before {
     }
 }
 
-.save4{
+.home{
 	height: 450px;
+}
+
+.ryo{
+	left: 0;
+	background-image: url(../images/original/ryo.jpg);
+}
+
+.ayuka{
+	right: 0;
+	background-image: url(../images/original/ayuka.jpg);
 }
