@@ -2641,34 +2641,6 @@ h2.wed_without_after {
 	position: fixed;
   transform: rotateZ(25deg)!important;	
 }
-.wed_music_container {
-	background-image: url(../images/music_new_container.png);
-	background-position: center;
-  background-repeat: no-repeat;
-	text-align: center;
-	padding: 26px 18px 18px 18px;
-	-webkit-transition: all .6s;
-	-o-transition: all .6s;
-	transition: all .6s;
- 	animation: pulse2 3.5s infinite both;
-}
-	.wed_music_container i {
-	 color: #ecd6ff;
-	 font-weight: bold;
-	 display: inline-block;
-}
-.wed_floral .wed_music_container {
-	background-image: url(../images/border_music.png);
-}
-	.wed_floral .wed_music_container i {
-		color: #bcf8eb;
-	}
-	.wed_vid_bg .wed_music_container {
-	background-image: url(../images/border_music_video.png);
-}
-	.wed_vid_bg .wed_music_container i {
-		color: #cfb485;
-	}
 .wed_iframe {
 	position: fixed;
 	left: 0;
@@ -5493,20 +5465,6 @@ img.wed_fullwidth {
 		-o-transition: all .6s;
 		transition: all .6s;
 	}
- /*Floral Frame*/
- .wed_floral .wed_img_1:before, 
- .wed_floral .wed_img_2:before {
-		display: block;
-		content: "";
-		position: absolute;
-		width: 380px;
-		height:340px;
-   	background-image: url(../images/floral_frame.png);
-   	background-repeat: no-repeat;
-   	background-position: -31px -19px;
-   	border: none;
-   	border-radius: 0;
-	}
 	/*Floral White Frame*/
 	.wed_vid_bg .wed_img_1:before, 
  .wed_vid_bg .wed_img_2:before {
@@ -5521,7 +5479,7 @@ img.wed_fullwidth {
    	border: none;
    	border-radius: 0;
 	}
-	.wed_img_1:before, 
+	.wed_img_1:before,
 	.wed_img_2:before {
 		display: block;
 		content: "";
