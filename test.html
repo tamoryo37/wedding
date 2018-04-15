@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="wed_form" class="wed_form"
+      action="https://api.formbucket.com/f/buk_xplcmyRuEqUfs6a3AAWoIjeS" method="post"
+      data-ajax="false">
+    <div class="row">
+        <input type="radio" name="attendance" value="出席" checked id="radio01"/>
+        <label for="radio01" class="radio font-bold">ご出席</label>
+
+        <input type="radio" name="attendance" value="欠席" id="radio02"/>
+        <label for="radio02" class="radio font-bold">ご欠席</label>
+
+        <div class="col-md-12">
+            <div class="form_color wed_image_bck" data-border="#b58cf0">
+                <input type="text" class="form-control" placeholder="お名前" name="name"
+                       required>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form_color wed_image_bck" data-border="#b58cf0">
+                <input type="text" class="form-control" placeholder="ふりがな" name="kana"
+                       required>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form_color wed_image_bck" data-border="#b58cf0">
+                <input type="text" class="form-control" placeholder="郵便番号" name="zipcode"
+                       required>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form_color wed_image_bck" data-border="#b58cf0">
+                <input type="text" class="form-control" placeholder="住所" name="address"
+                       required>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form_color wed_image_bck" data-border="#b58cf0">
+                                            <textarea class="form-control" placeholder="メッセージ"
+                                                      name="message"></textarea>
+            </div>
+            <input type="checkbox" name="afterParty" value="参加" id="afterParty"/>
+            <label for="afterParty" class="checkbox left">2次会に参加する</label>
+
+            <input type="checkbox" name="allergies" value="allergies" id="allergies"/>
+            <label for="allergies" class="checkbox left">食材アレルギー</label>
+
+            <input type="checkbox" name="children" value="children" id="children"/>
+            <label for="children" class="checkbox left">お子様連れ</label>
+
+            <div id="allergies-text" class="form_color wed_image_bck hidden"
+                 data-border="#b58cf0">
+                                            <textarea class="form-control" placeholder="食材のアレルギーをお持ちの場合はご入力ください。"
+                                                      name="message"></textarea>
+            </div>
+            <div id="children-text" class="form_color wed_image_bck hidden"
+                 data-border="#b58cf0">
+                                            <textarea class="form-control"
+                                                      placeholder="お子様連れでいらっしゃる方は、お子様のお名前とご年齢、お席はお子様用・大人用かご入力ください。"
+                                                      name="message"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <input type="submit" class="btn btn_new wed_btn_margbot " value="送信">
+    </div>
+</form>
+</body>
+</html>

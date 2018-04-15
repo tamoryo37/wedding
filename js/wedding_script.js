@@ -620,5 +620,5 @@ $('#children').click(function () {
 });
 
 $(document).bind("mobileinit", function(){
-    $.extend(  $.mobile, { ajaxFormsEnabled: false });
+    $.extend( $.mobile, { ajaxFormsEnabled: false });
 });
