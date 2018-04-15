@@ -1,7 +1,0 @@
-Hallo and thank you for choosing our work!
-For better site performance please follow some simple steps
-1. Images should be less than 500kb. For slider images you can use 1200X900 size for other images 600X400, 800X400 will be enough.
-   Use this link for images compression - http://compressjpeg.com/
-   Please watch video on manual compression for images. Quality vs Size control yourself as you wish.
-2. Don’t use two different animation on one page, that can affect site performance. Off course you can do that but test if that changes the site performance at first .
-Thank you!
