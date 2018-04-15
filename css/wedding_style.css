@@ -2888,7 +2888,6 @@ img.wed_small_img {
     height: 100%
 }
 
-
 .wed_groom {
     margin-bottom: 80px
 }
@@ -6514,4 +6513,7 @@ span.font-12 {
 .ayuka {
     right: 0;
     background-image: url(../images/original/ayuka.jpg)
+}
+.save4{
+    height: 450px;
 }
