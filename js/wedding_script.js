@@ -356,8 +356,9 @@
 
 	/* Map */
 	$('.wed_map_over').on("click", function(e){
-		$(this).parents('.wed_section_outter, .wed_inside_map').toggleClass('active_map');
+		$(this).parents('.wed_section_outter, .wed_inside_map').addClass('active_map');
 	});
+
 
 	/* Mobile Menu */
 	$('.wed_top_menu_mobile_link').on("click", function(e){

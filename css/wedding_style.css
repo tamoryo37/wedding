@@ -2540,7 +2540,7 @@ header {
 /*===============================================*/
 .wed_map iframe {
 	width: 100%;
-	margin-top: -48px;
+	margin-top: 0;
 }
 /*Slider Img*/
 	.wed_slider_ornament {
