@@ -2700,7 +2700,7 @@ h2.wed_without_after {
 	margin-bottom: 80px;
 }
  img.wed_img_height {
-	min-height: 400px;
+	/*min-height: 400px;*/
 	min-width: 500px;
   object-fit: cover;
   object-position: -31px -5px;
@@ -5880,6 +5880,13 @@ input[type=checkbox]:checked + .checkbox:before {
 }
 
 @media screen and (max-width: 480px) {
+	.wed_slider{
+		height: 90vh;
+	}
+
+	.home{
+		font-size: 20px;
+	}
     p.font-medium {
         font-size: 13px;
     }
