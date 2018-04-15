@@ -596,8 +596,11 @@
 
 
 //クリックでハンバーガーメニュー閉じる
-$('ul.wed_top_menu').click(function(){
-    $('.wed_top_menu_cont').css('display','none');
+$('ul.wed_top_menu').click(function () {
+    var windowWidth = window.innerWidth;
+    if (windowWidth < 768) {
+        $('.wed_top_menu_cont').css('display', 'none');
+    }
 });
 
 $('#allergies').click(function () {
