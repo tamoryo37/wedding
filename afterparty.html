@@ -7,7 +7,7 @@
     <meta property="og:site_name" content="Wedding">
     <meta property="og:title" content="Ryo & Ayuka Wedding">
     <meta property="og:image" content="https://cp-tamotoryo.github.io/wedding/images/original/metaimage.jpg">
-    <meta name="description" content="2018年6月2日(土)結婚式の招待状です。お返事お待ちしております。">
+    <meta name="description" content="2018年6月2日(土)結婚式2次会の招待状です。お返事お待ちしております。">
     <title>Ryo & Ayuka Wedding</title>
 
 
@@ -111,7 +111,7 @@
             <!-- Slider Texts -->
             <div class="wed_slide_txt wed_slide_center_bottom text-center" data-0="opacity:1;"
                  data--400-bottom="opacity:0;">
-                <img src="images/save_new4.png" height="450" alt="Save the Date" class="home">
+                <img src="images/save_new4.png" class="home save4" alt="Save the Date">
                 <h4 class="home">2018.06.02</h4>
                 <h3 class="home">Ryo & Ayuka</h3>
             </div>
@@ -149,7 +149,7 @@
                     <div class="wed_wrapper">
                         <div class="wed_img_1 skrollable skrollable-after" data-bottom="left:20%" data-center="left:0"
                              data-image="images/original/ryo.jpg"
-                             style="left: 0px; background-image: url(&quot;images/original/ryo.jpg&quot;);">
+                             style="left: 0; background-image: url(images/original/ryo.jpg);">
                             <h6 class="wed_name_left">Ryo<br><span>Tamoto</span></h6>
                         </div>
                     </div>
@@ -157,7 +157,7 @@
                     <div class="wed_wrapper">
                         <div class="wed_img_2 skrollable skrollable-after" data-bottom="right:20%" data-center="right:0"
                              data-image="images/original/ayuka.jpg"
-                             style="right: 0px; background-image: url(&quot;images/original/ayuka.jpg&quot;);">
+                             style="right: 0; background-image: url(images/original/ayuka.jpg);">
                             <h6 class="wed_name_right">Ayuka<br><span>Tamoto</span></h6>
                         </div>
                     </div>
@@ -473,28 +473,7 @@
             <section id="where" class="wed_section_inner">
                 <div class="container-full">
                     <div class="row">
-                        <!--TODO　時間いれる-->
-                        <div class="col-md-4 wed_wht_txt wed_image_bck wed_service_block"
-                             data-image="https://zexy.net/pa/7770023774/01/1728386_458.jpg">
-                            <!-- Over -->
-                            <div class="wed_over" data-color="rgb(62, 54, 187)" data-opacity="0.3"
-                                 data-blend="color"></div>
-                            <div class="wed_over" data-color="#000" data-opacity="0.3"></div>
-
-                            <div class="wed_simple_block text-center">
-                                <h4>挙式</h4>
-                                <h4>- CEREMONY -</h4>
-                                <br>
-                                <p>品川プリンスホテル<br>メインタワー　3階<br>
-                                    TENKEI<br>
-                                    13:30〜14:00<br>
-                                    <span style="font-size: 12px">※13:15までにメインタワー3階ロビーまでお越しください</span><br>
-                                    <span style="font-size: 12px">※お荷物は2階クロークへお預けください</span>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 wed_wht_txt wed_image_bck wed_service_block"
+                        <div class="col-md-6 wed_wht_txt wed_image_bck wed_service_block"
                              data-image="http://zexy.net/wedding/c_7770023774/blog/images/shinagawa_prince_1407_015.jpg?1415793933655">
                             <!-- Over -->
                             <div class="wed_over" data-color="rgb(62, 54, 187)" data-opacity="0.3"
@@ -506,11 +485,13 @@
                                 <h4>- RECEPTION -</h4>
                                 <br>
                                 <p>品川プリンスホテル<br>メインタワー　34階<br>ルビー34
-                                    <br>14:45〜17:15<br>（14:15受付開始）</p>
+                                    <br>14:45〜17:15<br>（14:15受付開始）<br>
+                                    <span style="font-size: 12px">※お荷物は2階クロークへお預けください</span>
+                                </p>
                             </div>
                         </div>
 
-                        <div class="col-md-4 wed_wht_txt wed_image_bck wed_service_block"
+                        <div class="col-md-6 wed_wht_txt wed_image_bck wed_service_block"
                              data-image="https://www.nomurakougei.co.jp/uploads/achievements/images/1/5/e98967cb7f7ee90958bbad8184721478be7b859c419db2cea795a13825f596ea.jpg">
                             <!-- Over -->
                             <div class="wed_over" data-color="rgb(62, 54, 187)" data-opacity="0.3"
@@ -582,7 +563,7 @@
 
                             <form id="wed_form" class="wed_form"
                                   action="https://api.formbucket.com/f/buk_xplcmyRuEqUfs6a3AAWoIjeS" method="post"
-                                  target="_blank">
+                                  data-ajax="false">
                                 <div class="row">
                                     <input type="radio" name="attendance" value="出席" checked id="radio01"/>
                                     <label for="radio01" class="radio font-bold">ご出席</label>
@@ -614,36 +595,33 @@
                                                    required>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="row">
+
                                     <div class="col-md-12">
                                         <div class="form_color wed_image_bck" data-border="#b58cf0">
                                             <textarea class="form-control" placeholder="メッセージ"
-                                            name="message"></textarea>
+                                                      name="message"></textarea>
                                         </div>
                                         <input type="checkbox" name="afterParty" value="参加" id="afterParty"/>
                                         <label for="afterParty" class="checkbox left">2次会に参加する</label>
 
-                                        <input type="checkbox" name="allergies" value="allergies" id="allergies"/>
+                                        <input type="checkbox" name="allergies" value="yes" id="allergies"/>
                                         <label for="allergies" class="checkbox left">食材アレルギー</label>
 
-                                        <input type="checkbox" name="children" value="children" id="children"/>
+                                        <input type="checkbox" name="children" value="yes" id="children"/>
                                         <label for="children" class="checkbox left">お子様連れ</label>
 
                                         <div id="allergies-text" class="form_color wed_image_bck hidden"
-                                        data-border="#b58cf0">
+                                             data-border="#b58cf0">
                                             <textarea class="form-control" placeholder="食材のアレルギーをお持ちの場合はご入力ください。"
-                                            name="message"></textarea>
+                                                      name="allergies-message"></textarea>
                                         </div>
                                         <div id="children-text" class="form_color wed_image_bck hidden"
-                                        data-border="#b58cf0">
-                                            <textarea class="form-control" placeholder="お子様連れでいらっしゃる方は、お子様のお名前とご年齢、お席はお子様用・大人用かご入力ください。"
-                                            name="message"></textarea>
+                                             data-border="#b58cf0">
+                                            <textarea class="form-control"
+                                                      placeholder="お子様連れでいらっしゃる方は、お子様のお名前とご年齢、お席はお子様用・大人用かご入力ください。"
+                                                      name="children-message"></textarea>
                                         </div>
-
-                                        <!--<button class="button secondary" type="submit">Submit</button>-->
                                     </div>
-
                                 </div>
                                 <div class="row">
                                     <input type="submit" class="btn btn_new wed_btn_margbot " value="送信">
