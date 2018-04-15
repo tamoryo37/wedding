@@ -2862,16 +2862,6 @@ img.wed_small_img {
     overflow: hidden
 }
 
-.wed_music_content {
-    left: 10px;
-    width: 60px;
-    bottom: 15px;
-    z-index: 99;
-    height: 52px;
-    position: fixed;
-    transform: rotateZ(25deg) !important
-}
-
 .wed_iframe {
     position: fixed;
     left: 0;
@@ -2898,9 +2888,6 @@ img.wed_small_img {
     height: 100%
 }
 
-.wed_music_over {
-    pointer-events: none
-}
 
 .wed_groom {
     margin-bottom: 80px

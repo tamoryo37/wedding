@@ -697,7 +697,7 @@
         max-height: 500px
     }
 
-    .wed_music_container, .wed_scroll_down, .wed_water_border:after {
+    .wed_scroll_down, .wed_water_border:after {
         display: none
     }
 

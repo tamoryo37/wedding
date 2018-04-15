@@ -242,10 +242,6 @@
             d(this).find(".wed_header_search_cont, .wed_header_basket_cont").stop().fadeToggle()
         }
     });
-    d(".wed_music_content").on("click", function (f) {
-        f.preventDefault();
-        d(this).next(".wed_iframe").toggleClass("active")
-    });
     d(".wed_go, .wed_top_menu_cont a").on("click", function (g) {
         var f = d(this);
         d("html, body").stop().animate({scrollTop: d(f.attr("href")).offset().top}, 2300);
