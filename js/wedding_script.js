@@ -618,3 +618,7 @@ $('#children').click(function () {
         $('#children-text').addClass('hidden');
     }
 });
+
+$(document).bind("mobileinit", function(){
+    $.extend(  $.mobile, { ajaxFormsEnabled: false });
+});
