@@ -5883,7 +5883,9 @@ input[type=checkbox]:checked + .checkbox:before {
 	.wed_slider{
 		height: 90vh;
 	}
-
+	.btn_new{
+		width: 50%;
+	}
 	.home{
 		font-size: 20px;
 	}
